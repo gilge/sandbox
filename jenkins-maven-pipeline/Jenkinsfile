@@ -28,16 +28,13 @@ pipeline {
                 }
             }
         }
-    }
-
-	stages {
-        stage ('Compile Stage') {
+        stage ('War Compile Stage') {
 
             steps {
                 withMaven(maven : 'maven_3_5_0') {
                     sh 'mvn -f war-sample/pom.xml  clean compile'
                 }
             }
-    }
-	
+		}
+	}
 }
