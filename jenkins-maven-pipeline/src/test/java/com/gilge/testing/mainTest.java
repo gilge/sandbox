@@ -2,7 +2,7 @@ package com.techprimers.testing;
 
 import org.junit.jupiter.api.*;
 
-class FizzBuzzTest {
+class mainTest {
 
     public FizzBuzz fB;
 
