@@ -1,4 +1,4 @@
-package com.techprimers.testing;
+package com.gilge.testing;
 
 import org.junit.jupiter.api.*;
 
@@ -17,8 +17,7 @@ class mainTest {
         String Suz722 = fB.play(1);
         Assertions.assertEquals(Suz722, "1");
     }
-
-
+	
     @AfterEach
     public void tearDown() {
         fB = null;
