@@ -4,35 +4,35 @@ import org.junit.jupiter.api.*;
 
 class mainTest {
 
-    public FizzBuzz fB;
+    public Suz722 fB;
 
     @BeforeEach
     public void setUp() {
-        fB = new FizzBuzz();
+        fB = new Suz722();
     }
 
-    @DisplayName("Play FizzBuzz with number = 1")
+    @DisplayName("Play Suz722 with number = 1")
     @Test
     public void testNumber() {
-        String fizzBuzz = fB.play(1);
-        Assertions.assertEquals(fizzBuzz, "1");
+        String Suz722 = fB.play(1);
+        Assertions.assertEquals(Suz722, "1");
     }
 
-    @DisplayName("Play FizzBuzz with number = 3")
+    @DisplayName("Play Suz722 with number = 3")
     @Test
     public void testFizz() {
-        String fizzBuzz = fB.play(3);
-        Assertions.assertEquals(fizzBuzz, "Fizz");
+        String Suz722 = fB.play(3);
+        Assertions.assertEquals(Suz722, "Fizz");
     }
 
-    @DisplayName("Play FizzBuzz with number = 5")
+    @DisplayName("Play Suz722 with number = 5")
     @Test
     public void testBuzz() {
-        String fizzBuzz = fB.play(5);
-        Assertions.assertEquals(fizzBuzz, "Buzz");
+        String Suz722 = fB.play(5);
+        Assertions.assertEquals(Suz722, "Buzz");
     }
 
-    @DisplayName("Don't Play FizzBuzz with number = 0")
+    @DisplayName("Don't Play Suz722 with number = 0")
     @Test
     public void testZero() {
 
