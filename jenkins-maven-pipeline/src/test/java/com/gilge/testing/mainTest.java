@@ -37,12 +37,12 @@ class mainTest {
     public void testZero() {
 
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> fB.play(0));
+                () -> fB.play(3));
     }
-
 
     @AfterEach
     public void tearDown() {
         fB = null;
     }
+	
 }
