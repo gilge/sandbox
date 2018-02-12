@@ -59,16 +59,16 @@
     <repositories>
         <repository>
             <id>myMavenRepo.read</id>
-			<name>8de71567472b-snapshots</name>
-            <url>http://192.168.137.4:8080/artifactory/libs-snapshot-local</url>
+			<name>8de71567472b-releases</name>
+            <url>http://192.168.137.4:8080/artifactory/ext-release-local</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
             <id>myMavenRepo.write</id>
-			<name>8de71567472b-snapshots</name>
-            <url>http://192.168.137.4:8080/artifactory/libs-snapshot-local</url>
+			<name>8de71567472b-releases</name>
+            <url>http://192.168.137.4:8080/artifactory/ext-release-local</url>
         </repository>
     </distributionManagement>
 
