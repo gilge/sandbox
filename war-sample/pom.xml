@@ -64,6 +64,16 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>	
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://192.168.137.72/</url>
+					<server>TomcatServer</server>
+					<path>/myapp</path>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
