@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.gilge</groupId>
+	<artifactId>war-sample</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>Hello World Web Application Repository</name>
+	<description>Simplest possible Java Webapp</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>8.1.5.v20120716</version>
+				<configuration>
+					<scanIntervalSeconds>0</scanIntervalSeconds>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+        <repository>
+            <id>myMavenRepo.read</id>
+			<name>8de71567472b-snapshots</name>
+            <url>http://192.168.137.4:8080/artifactory/libs-snapshot-local</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+			<name>8de71567472b-snapshots</name>
+            <url>http://192.168.137.4:8080/artifactory/libs-snapshot-local</url>
+        </repository>
+    </distributionManagement>
+</project>
