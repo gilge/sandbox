@@ -22,14 +22,14 @@ class mainTest {
     @Test
     public void testFizz() {
         String Suz722 = fB.play(3);
-        Assertions.assertEquals(Suz722, "Fizz");
+        Assertions.assertEquals(Suz722, "Suz");
     }
 
     @DisplayName("Play Suz722 with number = 5")
     @Test
     public void testBuzz() {
         String Suz722 = fB.play(5);
-        Assertions.assertEquals(Suz722, "Buzz");
+        Assertions.assertEquals(Suz722, "722");
     }
 
     @DisplayName("Don't Play Suz722 with number = 0")
@@ -40,9 +40,9 @@ class mainTest {
                 () -> fB.play(0));
     }
 
+
     @AfterEach
     public void tearDown() {
         fB = null;
     }
-
 }
