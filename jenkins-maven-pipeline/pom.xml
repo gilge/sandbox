@@ -55,10 +55,18 @@
 
     </dependencies>
 
+   <servers>
 	<server>
-      <username>admin</username>
-      <password>password</password>
+        <id>myMavenRepo.write</id>
+        <username>admin</username>
+        <password>password</password>
     </server>
+	<server>
+        <id>myMavenRepo.read</id>
+        <username>admin</username>
+        <password>password</password>
+    </server>
+  </servers>
 	
     <repositories>
         <repository>
