@@ -55,7 +55,6 @@
 
     </dependencies>
 
-	
     <repositories>
         <repository>
             <id>myMavenRepo.read</id>
