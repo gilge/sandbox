@@ -40,7 +40,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn -f war-sample/pom.xml tomcat7:deploy '
+                    sh 'mvn -f war-sample/pom.xml war-sample:deploy '
                 }
             }
 		}
