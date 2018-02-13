@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.gilge</groupId>
 	<artifactId>war-sample</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -16,7 +16,7 @@
 		</dependency>
 	</dependencies>
 	
-	<repositories>
+<repositories>
         <repository>
             <id>myMavenRepo.read</id>
 			<name>8de71567472b-snapshots</name>
@@ -64,16 +64,6 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>	
-			<plugin>
-				<groupId>com.gilge</groupId>
-				<artifactId>war-sample</artifactId>
-				<version>1.0.0</version>
-				<configuration>
-					<url>http://192.168.137.72/</url>
-					<server>TomcatServer</server>
-					<path>/war-sample</path>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
