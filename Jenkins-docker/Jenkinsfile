@@ -1,9 +1,7 @@
 pipeline {
     agent none
     stages {
-		stage ('freestyle-01'){
-				  build job: 'freestyle-01', wait: false
-		}
+
 		stage('Stage 1') {
             steps {
                 echo 'Hello world!' 
