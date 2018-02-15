@@ -19,7 +19,7 @@ pipeline {
             }
         }
 		stage 'freestyle-01'{
-				  def job = build job: 'freestyle-01'
+				  build job: 'freestyle-01'
 				  }
 	    }
     }
