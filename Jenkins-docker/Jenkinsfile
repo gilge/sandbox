@@ -19,11 +19,9 @@ pipeline {
             }
         }
 		stage ('freestyle-01'){
-					agent{
 				  build job: 'freestyle-01', wait: false
-				  }
-		    }
-	    }
+		}
+	}
 }
 
 
