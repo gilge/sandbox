@@ -18,6 +18,9 @@ pipeline {
 				sh 'sleep 10'
             }
 		}
+		stage ('freestyle-01'){
+				  build job: 'freestyle-01', wait: false
+		}
 	}
 }
 
