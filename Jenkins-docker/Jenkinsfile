@@ -17,7 +17,7 @@ pipeline {
                 sh 'node --version'
 				sh 'sleep 10'
             }
-     
+		}
 	}
 }
 
