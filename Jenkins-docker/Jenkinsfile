@@ -1,10 +1,14 @@
 pipeline {
     agent none
     stages {
-
 		stage('Stage 1') {
             steps {
                 build job: 'freestyle-01', wait: false
+				}
+         }
+		 stage('Stage 2') {
+            steps {
+                build job: 'freestyle-02', wait: false
 				}
          }
         stage('Back-end') {
