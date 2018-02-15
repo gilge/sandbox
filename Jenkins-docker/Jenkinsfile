@@ -22,7 +22,6 @@ pipeline {
 				  build job: 'freestyle-01', wait: false
 				  }
 	    }
-    }
 }
 
 
