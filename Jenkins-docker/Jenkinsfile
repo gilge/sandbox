@@ -3,7 +3,12 @@ pipeline {
     stages {
 		stage('Stage 1') {
             steps {
-                build job: 'freestyle-01', wait: false
+                build job: 'freestyle-01.5', wait: false
+				}
+         }
+		 	stage('Stage 1.5') {
+            steps {
+                build job: 'freestyle-01', wait: true
 				}
          }
 		 stage('Stage 2') {
