@@ -13,7 +13,7 @@ pipeline {
          }
 		 stage('Stage 2') {
             steps {
-                build job: 'freestyle-02', wait: false
+                build job: 'freestyle-02', wait: true
 				}
          }
         stage('Back-end') {
