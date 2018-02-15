@@ -1,6 +1,14 @@
 pipeline {
     agent none
     stages {
+		stage ('freestyle-01'){
+				  build job: 'freestyle-01', wait: false
+		}
+		stage('Stage 1') {
+            steps {
+                echo 'Hello world!' 
+				}
+         }
         stage('Back-end') {
             agent {
                 docker { image 'maven:3-alpine' }
@@ -18,10 +26,5 @@ pipeline {
 				sh 'sleep 10'
             }
 		}
-		stage ('freestyle-01'){
-				  build job: 'freestyle-01', wait: false
-		}
 	}
 }
-
-
