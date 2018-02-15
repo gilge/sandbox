@@ -19,8 +19,6 @@ pipeline {
                 }
             }
         }
-
-
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'maven_3_5_0') {
@@ -29,7 +27,6 @@ pipeline {
             }
         }
         stage ('War Compile Stage') {
-
             steps {
                 withMaven(maven : 'maven_3_5_0') {
                     sh 'mvn -f war-sample/pom.xml clean deploy'
@@ -37,7 +34,6 @@ pipeline {
             }
 		}
 		stage ('War Deployment Stage') {
-
             steps {
                 withMaven(maven : 'maven_3_5_0') {
                     sh 'mvn -f war-sample/pom.xml tomcat7:deploy'
