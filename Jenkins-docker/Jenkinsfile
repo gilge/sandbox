@@ -1,21 +1,21 @@
 pipeline {
     agent none
     stages {
-		stage('Stage 1') {
+          stage('Stage 1') {
             steps {
-                build job: 'freestyle-01.5', wait: false
-				}
-         }
-		 	stage('Stage 1.5') {
+                     build job: 'freestyle-01.5', wait: false
+		  }
+         	}
+		stage('Stage 1.5') {
             steps {
-                build job: 'freestyle-01', wait: true
-				}
-         }
+                     build job: 'freestyle-01', wait: true
+		  }
+         	}
 		 stage('Stage 2') {
             steps {
-                build job: 'freestyle-02', wait: true
-				}
-         }
+                     build job: 'freestyle-02', wait: true
+		  }
+                }
         stage('Back-end') {
             agent {
                 docker { image 'maven:3-alpine' }
@@ -30,8 +30,8 @@ pipeline {
             }
             steps {
                 sh 'node --version'
-				sh 'sleep 10'
-            }
-		}
+		sh 'sleep 10'
+                  }
+	    }
 	}
 }
