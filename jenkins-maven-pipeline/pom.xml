@@ -59,7 +59,7 @@
         <repository>
             <id>myMavenRepo.read</id>
 			<name>6f771370dcad-snapshots</name>
-            <url>http://192.168.137.4:8080/artifactory/libs-snapshot-local</url>
+            <url>http://192.168.137.107:8080/artifactory/libs-snapshot-local</url>
         </repository>
     </repositories>
 
@@ -67,7 +67,7 @@
         <repository>
             <id>myMavenRepo.write</id>
 			<name>6f771370dcad-snapshots</name>
-            <url>http://192.168.137.4:8080/artifactory/libs-snapshot-local</url>
+            <url>http://192.168.137.107:8080/artifactory/libs-snapshot-local</url>
         </repository>
     </distributionManagement>
 
